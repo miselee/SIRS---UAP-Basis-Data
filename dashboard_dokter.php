@@ -2,7 +2,6 @@
 session_start();
 include "config/database.php";
 
-// Pastikan user login dan role dokter
 if (!isset($_SESSION['user']) || (is_array($_SESSION['user']) && $_SESSION['user']['role'] !== 'dokter') || is_string($_SESSION['user'])) {
     // Jika hanya string disimpan, anggap string = username
     $username = is_string($_SESSION['user']) ? $_SESSION['user'] : ($_SESSION['user']['username'] ?? '');
@@ -14,7 +13,6 @@ if (!isset($_SESSION['user']) || (is_array($_SESSION['user']) && $_SESSION['user
     $user = $_SESSION['user'];
 }
 
-// Ambil kunjungan hari ini untuk dokter ini
 $today = date('Y-m-d');
 $id_dokter = $user['id_user'] ?? $user['id_dokter'] ?? 0;
 
@@ -51,7 +49,6 @@ $kunjungan = mysqli_query($conn, "
     filter: brightness(70%);
 }
 
-/* Overlay teks di header */
 .header-text {
     position: absolute;
     top: 50%;
@@ -70,7 +67,6 @@ $kunjungan = mysqli_query($conn, "
     font-size: 1rem;
 }
 
-/* Card hover effect */
 .card-hover:hover {
     transform: translateY(-5px);
     transition: 0.3s;
@@ -80,7 +76,6 @@ $kunjungan = mysqli_query($conn, "
     font-size: 2.5rem;
 }
 
-/* List group kunjungan */
 .list-kunjungan {
     max-height: 400px;
     overflow-y: auto;
@@ -185,3 +180,4 @@ $kunjungan = mysqli_query($conn, "
 </div>
 </body>
 </html>
+
