@@ -1,4 +1,3 @@
-# SIRS---UAP-Basis-Data
 # Sistem Informasi Rumah Sakit (SIRS)
 
 Sistem Informasi Rumah Sakit (SIRS) ini merupakan aplikasi berbasis web untuk membantu rumah sakit dalam mengelola data pasien, kunjungan, rekam medis, diagnosa, pembayaran, jadwal dokter, dan sumber daya medis lainnya. Sistem ini dibangun menggunakan **PHP**, **MySQL**, dan **Bootstrap 5** untuk UI.
