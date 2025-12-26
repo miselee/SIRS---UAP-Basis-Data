@@ -10,11 +10,11 @@ Sistem Informasi Rumah Sakit (SIRS) ini merupakan aplikasi berbasis web untuk me
    - Tambah, edit, hapus data pasien
    - Tambah dan kelola kunjungan pasien
    - Lihat status kunjungan (Rawat Jalan / Rawat Inap)
-   - Modul pembayaran pasien (cetak struk, edit, hapus)
+   - Modul pembayaran pasien (edit, hapus)
 
 2. **Dashboard Dokter**
    - Lihat kunjungan hari ini
-   - Lihat dan update rekam medis pasien
+   - Lihat, update dan cetak rekam medis pasien
    - Tambah diagnosa pasien
    - Riwayat kunjungan pasien
    - Daftar Obat 
